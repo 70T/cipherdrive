@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — CipherDrive X1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-code {
+      font-family: var(--display);
+      font-size: clamp(5rem, 20vw, 10rem);
+      font-weight: 900;
+      color: var(--red);
+      line-height: 1;
+      opacity: 0.15;
+      user-select: none;
+    }
+    .error-msg {
+      font-family: var(--display);
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      color: var(--yellow);
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+    }
+    .error-sub {
+      color: var(--gray-light);
+      font-size: 0.85rem;
+      margin-bottom: 2.5rem;
+    }
+    .back-link {
+      font-family: var(--display);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--black);
+      background: var(--yellow);
+      padding: 0.7rem 1.8rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .back-link:hover { opacity: 0.85; }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-code">404</div>
+    <div class="error-msg">// Sivua ei löydy</div>
+    <p class="error-sub">Pyytämääsi sivua ei ole olemassa tai se on siirretty.</p>
+    <a href="/" class="back-link">Takaisin etusivulle</a>
+  </div>
+</body>
+</html>
